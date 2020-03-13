@@ -22,18 +22,18 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
-        </li>
-
+          
         <li class="nav-item">
             <a class="nav-link" href="#">Add To List</a>
         </li>
 
-        </ul>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
 
-        <button class="btn btn-outline-secondary my-2 my-sm-0" onclick="{% url 'about' %}" type="button">Add to List</button>
+        
+
+        </ul>
 
         <form class="form-inline my-2 my-lg-0" method="POST">
         {% csrf_token %}
@@ -46,10 +46,6 @@
 
     </div>
     </nav>
-    {% comment %} <form class="form-inline my-2 my-lg-0" action="{% url 'about' %} >
-        {% csrf_token %} {% endcomment %}
-        <button class="btn btn-outline-info my-2 my-sm-0" onclick="{% url 'about' %} type="submit">Add to List</button>
-    {% comment %} </form> {% endcomment %}
 
     <div class="container">
         </br>
